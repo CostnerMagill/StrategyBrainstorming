@@ -1,10 +1,9 @@
-
 #currently g6 params
-
 #Aero/Mechanical params
-dA =  2*29.33/ 1.21/18^2; #From Ansys, which uses 1.21 as the air density
-rR =  .0047 #Rolling resistance
 mass = 730/2.2
+weight = 317.514
+Crr = .0047
+CdA = 2*29.33 / 1.21/(18^2) #From Ansys, which uses 1.21 as the air density, Maybe account for rho later
 
 #Motor Params
 phaseResistance = 0.034
@@ -18,3 +17,11 @@ DC_Voltage = 126 #V
 DC_Imax = 150 #A
 DC_Imin = -60 #A
 idlePower = 22 #W
+
+
+
+
+rr = .0055
+dragArea = .2
+avgPower = 700
+availBat = 4500
