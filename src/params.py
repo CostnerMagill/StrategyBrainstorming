@@ -24,4 +24,4 @@ idlePower = 22 #W
 rr = .0055
 dragArea = .2
 avgPower = 700
-availBat = 4500
+availBat = 4000
