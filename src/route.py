@@ -1,7 +1,7 @@
 #Used for defining a route
 
 #Route parameters
-distance = 100
+distance = 300 #in km
 elevation = 0
 speedLimit = 45
 target_speed = 90 #target speed in kph

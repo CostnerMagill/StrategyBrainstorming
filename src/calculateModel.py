@@ -1,5 +1,7 @@
 from params import *
 from route import *
+from sympy.solvers import solve
+from sympy import symbols
 
 def calculateModel():
     air_density = (-3.64*(10**-14))*(elevation)**3+(3.88*(10**-9))*(elevation)**2-(1.18*(10**-4))*(elevation)+1.17
@@ -21,6 +23,18 @@ def calculateModel():
     
     print(max_time, max_dist)
 
+    v = symbols("V")
+    target_average_speed_list = solve(battery_energy + (avg_array_power*distance)/v - 0.0025*(v**2)*distance - 0.278*rolling_resistance*weight*distance*(1+(v/161))) #need to parse result and find answer
+    
+    target_average_speed = 0
+    for i in range(len(target_average_speed_list)):
+        if target_average_speed_list[i].is_real:
+            if target_average_speed_list[i] > target_average_speed:
+                target_average_speed = target_average_speed_list[i]
+    
+    print (target_average_speed)
+    
+    
     #Motor Model
     #dR = (Crr)*(1+(speed/161))*weight    #Rolling Resistance
 

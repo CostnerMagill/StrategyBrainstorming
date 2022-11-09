@@ -17,5 +17,5 @@ DC_Voltage = 126 #V
 DC_Imax = 150 #A
 DC_Imin = -60 #A
 idle_power = 22 #W
-battery_energy = 4000 #battery energy in watt hours
+battery_energy = 4500 #battery energy in watt hours
 avg_array_power = 700 #watts
