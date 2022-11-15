@@ -1,5 +1,6 @@
 # UKSC Strategizer
 
+This repository has been succeded and progress will continue a [UKSC Strategy Simulator](https://github.com/KentuckySolarCar/strategy-sim)
 [UKSC Github](https://github.com/KentuckySolarCar)
 
 ## Description
